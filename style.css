@@ -29,22 +29,37 @@
   
   .input-header {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 0px 0px 10px 0px;
+    margin-top:  10px; 
+    margin-bottom: 10px;
   }
   
-  .to-do-input input {
+  #item{
     width: 250px;
-    font-family: inherit;
+    font-family:inherit;
     border: none;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 10px;
     outline: none;
+    height: 21px;
+  }
+
+  #due{
+    width: 100px;
+    font-family: inherit;
+    border: none;
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    padding: 10px;
+    outline: none;
+    height: 21px;
   }
   
   .to-do-input button {
@@ -56,10 +71,18 @@
     border-bottom-right-radius: 10px;
   }
   
+  .due-task{
+    margin: 20px 0 20px 0;
+  }
+  .todays-task{
+    margin: 20px 0 20px 0;
+  }
+
   .to-do-list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    margin: 20px 0 20px 0;
+    /* gap: 15px; */
   }
   
   .to-do-list i {
@@ -130,7 +153,7 @@
     .input-header {
       flex-direction: column;
       padding-bottom: 20px;
-    }
+    } 
   
     .to-do-input {
       display: flex;
